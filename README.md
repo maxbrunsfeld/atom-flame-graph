@@ -1,5 +1,3 @@
 # flame-graph package
 
-A short description of your package.
-
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+This package allows you to easily record native a CPU profile of your running Atom window using Dtrace, and then visualize that profile in the form of a flame graph.
