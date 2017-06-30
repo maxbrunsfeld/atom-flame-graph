@@ -21,5 +21,12 @@
         "^1.0.0": "consumeStatusBar"
       }
     }
+  },
+  "configSchema": {
+    "functionFilter": {
+      "type": "string",
+      "default": "superstring",
+      "description": "String by which to filter stacks when generating flame graph"
+    }
   }
 }
