@@ -49,7 +49,7 @@ describe('StackAggregator', () => {
 
   describe('.getBlocksToRender()', () => {
     it('returns a flat list of positioned rectanges representing stack frames to render', () => {
-      const aggregator = new StackAggregator();
+      const aggregator = new StackAggregator(500); // 500 samples / second
 
       aggregator.addStack('bbb\naaa\n2');
       aggregator.addStack('aaa\n1');
@@ -63,19 +63,22 @@ describe('StackAggregator', () => {
           name: 'aaa',
           depth: 0,
           left: 0,
-          width: 75
+          width: 75,
+          duration: 6
         },
         {
           name: 'bbb',
           depth: 1,
           left: 0,
-          width: 50
+          width: 50,
+          duration: 4
         },
         {
           name: 'ccc',
           depth: 2,
           left: 0,
-          width: 25
+          width: 25,
+          duration: 2
         }
       ]);
     })
