@@ -1,7 +1,7 @@
 {
   "name": "flame-graph",
   "main": "./lib/flame-graph",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Visualize the time taken by native functions in Atom",
   "keywords": [
     "performance",
